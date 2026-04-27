@@ -1,0 +1,840 @@
+dddd<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone - Real Videos (HTML/CSS)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Sidebar Toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <label for="nav-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="logo">
+                <i class="fa-brands fa-youtube logo-icon"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mic-container">
+                <i class="fa-solid fa-microphone mic-icon"></i>
+            </div>
+        </div>
+        <div class="header-right">
+            <i class="fa-solid fa-video icon"></i>
+            <i class="fa-solid fa-bell icon"></i>
+            <div class="user-profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link active"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-bolt"></i> <span>Shorts</span></a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-clapperboard"></i> <span>Subscriptions</span></a>
+                <hr>
+                <a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> <span>Library</span></a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-clock-rotate-left"></i> <span>History</span></a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-clock"></i> <span>Watch Later</span></a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-thumbs-up"></i> <span>Liked Videos</span></a>
+                <hr>
+                <h3 class="sidebar-title">Subscriptions</h3>
+                <a href="#" class="nav-link"><img src="https://img.youtube.com/vi/Z6o7FqmBZvo/default.jpg" alt="user"> <span>Dhruv Rathee</span></a>
+                <a href="#" class="nav-link"><img src="https://img.youtube.com/vi/DipkxWlmneU/default.jpg" alt="user"> <span>Zem TV (H.M.)</span></a>
+                <a href="#" class="nav-link"><img src="https://img.youtube.com/vi/sGZn00qq2B4/default.jpg" alt="user"> <span>Avinash Kumar</span></a>
+                <a href="#" class="nav-link"><img src="https://img.youtube.com/vi/BbmrGEs2HXM/default.jpg" alt="user"> <span>Saurabh Gandhi</span></a>
+            </nav>
+        </aside>
+
+        <!-- Video Grid Container -->
+        <section class="content">
+            <!-- Categories Bar -->
+            <div class="categories-bar">
+                <button class="category-chip active">All</button>
+                <button class="category-chip">Dhruv Rathee</button>
+                <button class="category-chip">Zem TV</button>
+                <button class="category-chip">Vaibhav Kadnar</button>
+                <button class="category-chip">Dark Psychology</button>
+                <button class="category-chip">Dark History</button>
+                <button class="category-chip">Self Improvement</button>
+                <button class="category-chip">Science</button>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="video-grid">
+                <!-- Video Items will be manually added below -->
+                
+                <!-- Video 1 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-1" class="modal-toggle">
+                    <label for="modal-1" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/BbmrGEs2HXM/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">12:34</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/BbmrGEs2HXM/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Be So Calm It Makes People Nervous</h3>
+                                <p class="channel-name">Saurabh Gandhi</p>
+                                <p class="video-stats">1.2M views • 2 weeks ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-1" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-1" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/BbmrGEs2HXM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-2" class="modal-toggle">
+                    <label for="modal-2" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/xSOVd4BO0m8/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">15:20</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/xSOVd4BO0m8/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">How a BOY becomes a MAN</h3>
+                                <p class="channel-name">Saurabh Gandhi</p>
+                                <p class="video-stats">850K views • 1 month ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-2" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-2" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/xSOVd4BO0m8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-3" class="modal-toggle">
+                    <label for="modal-3" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/eaWiSErvaGc/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">10:45</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/eaWiSErvaGc/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">The Psychology of Being a MAN</h3>
+                                <p class="channel-name">Saurabh Gandhi</p>
+                                <p class="video-stats">2.1M views • 3 weeks ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-3" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-3" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/eaWiSErvaGc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-4" class="modal-toggle">
+                    <label for="modal-4" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/EIvjcFbS7nQ/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">18:10</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/EIvjcFbS7nQ/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Why Men have lost their respect in society</h3>
+                                <p class="channel-name">Saurabh Gandhi</p>
+                                <p class="video-stats">1.5M views • 2 months ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-4" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-4" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/EIvjcFbS7nQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-5" class="modal-toggle">
+                    <label for="modal-5" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/9lCYI977zss/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">14:05</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/9lCYI977zss/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">5 Things That Make Women Melt</h3>
+                                <p class="channel-name">Saurabh Gandhi</p>
+                                <p class="video-stats">3.4M views • 5 days ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-5" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-5" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/9lCYI977zss" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-6" class="modal-toggle">
+                    <label for="modal-6" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/DipkxWlmneU/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">22:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/DipkxWlmneU/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Build an AI Agent and Earn Money Online</h3>
+                                <p class="channel-name">Him-eesh Madaan</p>
+                                <p class="video-stats">920K views • 1 week ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-6" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-6" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/DipkxWlmneU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 7 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-7" class="modal-toggle">
+                    <label for="modal-7" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/BZ6PHK5A-S0/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">12:50</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/BZ6PHK5A-S0/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">21 Days will change you FOREVER !!</h3>
+                                <p class="channel-name">Him-eesh Madaan</p>
+                                <p class="video-stats">1.8M views • 2 weeks ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-7" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-7" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/BZ6PHK5A-S0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 8 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-8" class="modal-toggle">
+                    <label for="modal-8" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/mUIolsjyfLI/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">14:30</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/mUIolsjyfLI/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Don’t enter 2026 without Watching this</h3>
+                                <p class="channel-name">Him-eesh Madaan</p>
+                                <p class="video-stats">750K views • 3 days ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-8" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-8" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/mUIolsjyfLI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 9 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-9" class="modal-toggle">
+                    <label for="modal-9" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/ut2-pPt4sKs/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">11:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/ut2-pPt4sKs/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Think Like a GENIUS 🧠</h3>
+                                <p class="channel-name">Him-eesh Madaan</p>
+                                <p class="video-stats">2.5M views • 1 month ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-9" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-9" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/ut2-pPt4sKs" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 10 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-10" class="modal-toggle">
+                    <label for="modal-10" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/NCi3ZtRXiIo/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">13:55</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/NCi3ZtRXiIo/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">What Happens to Your Brain When You Sleep?</h3>
+                                <p class="channel-name">Him-eesh Madaan</p>
+                                <p class="video-stats">1.1M views • 3 weeks ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-10" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-10" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/NCi3ZtRXiIo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 11 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-11" class="modal-toggle">
+                    <label for="modal-11" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/sGZn00qq2B4/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">10:10</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/sGZn00qq2B4/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Discipline = Success: 6 Steps for 2026</h3>
+                                <p class="channel-name">Avinash Kumar</p>
+                                <p class="video-stats">540K views • 4 days ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-11" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-11" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/sGZn00qq2B4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 12 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-12" class="modal-toggle">
+                    <label for="modal-12" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/gPjWGKyR_UE/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">11:45</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/gPjWGKyR_UE/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Why You Feel Stuck: 4 Reasons</h3>
+                                <p class="channel-name">Avinash Kumar</p>
+                                <p class="video-stats">320K views • 1 week ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-12" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-12" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/gPjWGKyR_UE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 13 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-13" class="modal-toggle">
+                    <label for="modal-13" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/rLurivxDe_A/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">12:30</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/rLurivxDe_A/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Silence = Strength: Dark Confidence</h3>
+                                <p class="channel-name">Avinash Kumar</p>
+                                <p class="video-stats">610K views • 2 weeks ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-13" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-13" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/rLurivxDe_A" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 14 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-14" class="modal-toggle">
+                    <label for="modal-14" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/AAzLU7Oag1g/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">09:55</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/AAzLU7Oag1g/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Discipline = Freedom: Success Formula</h3>
+                                <p class="channel-name">Avinash Kumar</p>
+                                <p class="video-stats">480K views • 3 weeks ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-14" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-14" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/AAzLU7Oag1g" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 15 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-15" class="modal-toggle">
+                    <label for="modal-15" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/Z6o7FqmBZvo/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">21:40</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/Z6o7FqmBZvo/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">The FAKE Beauty of Bollywood Celebrities!</h3>
+                                <p class="channel-name">Dhruv Rathee</p>
+                                <p class="video-stats">5.2M views • 1 week ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-15" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-15" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/Z6o7FqmBZvo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 16 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-16" class="modal-toggle">
+                    <label for="modal-16" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/xsjNGcevbT8/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">18:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/xsjNGcevbT8/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">This Can Save Millions of Lives! | Blood Cancer</h3>
+                                <p class="channel-name">Dhruv Rathee</p>
+                                <p class="video-stats">3.1M views • 10 days ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-16" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-16" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/xsjNGcevbT8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 17 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-17" class="modal-toggle">
+                    <label for="modal-17" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/0HnMzuSYzwI/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">25:30</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/0HnMzuSYzwI/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">AI vs Humans | Have We Lost The Battle?</h3>
+                                <p class="channel-name">Dhruv Rathee</p>
+                                <p class="video-stats">4.8M views • 2 weeks ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-17" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-17" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/0HnMzuSYzwI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 18 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-18" class="modal-toggle">
+                    <label for="modal-18" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/6y5hGiqd9rA/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">19:45</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/6y5hGiqd9rA/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Can Humans Ever Leave the Milky Way?</h3>
+                                <p class="channel-name">Dhruv Rathee</p>
+                                <p class="video-stats">2.9M views • 1 month ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-18" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-18" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/6y5hGiqd9rA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 19 -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-19" class="modal-toggle">
+                    <label for="modal-19" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/CvD0nOgYmTY/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">16:50</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/CvD0nOgYmTY/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">The DARK Truth about Fruit Juices</h3>
+                                <p class="channel-name">Dhruv Rathee</p>
+                                <p class="video-stats">6.1M views • 2 months ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-19" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-19" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/CvD0nOgYmTY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 20: Zem TV Pyramid -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-20" class="modal-toggle">
+                    <label for="modal-20" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/zPXVS88OS2s/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">32:10</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/zPXVS88OS2s/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">How Ancient Engineers built Impossible Pyramids</h3>
+                                <p class="channel-name">Zem TV</p>
+                                <p class="video-stats">12M views • 1 year ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-20" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-20" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/zPXVS88OS2s" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 21: Vaibhav Kadnar Manipulator -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-21" class="modal-toggle">
+                    <label for="modal-21" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/rC506c7D878/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">14:55</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/rC506c7D878/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Become A MASTER MANIPULATOR | 7 DARK Techniques</h3>
+                                <p class="channel-name">Vaibhav Kadnar</p>
+                                <p class="video-stats">1.8M views • 6 months ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-21" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-21" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/rC506c7D878" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 22: Zem TV Discoveries -->
+                <div class="video-item">
+                    <input type="checkbox" id="modal-22" class="modal-toggle">
+                    <label for="modal-22" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://img.youtube.com/vi/5-5E1_o55wE/maxresdefault.jpg" alt="Thumbnail">
+                            <span class="duration">28:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://img.youtube.com/vi/5-5E1_o55wE/default.jpg" alt="Avatar" class="channel-avatar">
+                            <div class="video-details">
+                                <h3 class="video-title">Amazing Discovery made by robotic Camera Inside Pyramids</h3>
+                                <p class="channel-name">Zem TV</p>
+                                <p class="video-stats">8.5M views • 2 years ago</p>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="modal">
+                        <label for="modal-22" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <label for="modal-22" class="modal-close">&times;</label>
+                            <iframe data-src="https://www.youtube.com/embed/5-5E1_o55wE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const extraVideos = [
+            "https://youtu.be/qz0aGYrrlhU",
+            "https://youtu.be/mU6anWqZJcc",
+            "https://youtu.be/pQN-pnXPaVg",
+            "https://youtu.be/1Rs2ND1ryYc",
+            "https://youtu.be/yfoY53QXEnI",
+            "https://youtu.be/hdI2bqOjy3c",
+            "https://youtu.be/W6NZfCO5SIk",
+            "https://youtu.be/jS4aFq5-91M",
+            "https://youtu.be/8dWL3wF_OMw",
+            "https://youtu.be/PkZNo7MFNFg",
+            "https://youtu.be/DG0C3Tntl1M",
+            "https://youtu.be/OK_JCtrrv-c",
+            "https://youtu.be/2eebptXfEvw",
+            "https://youtu.be/X0MGztjV7H4",
+            "https://youtu.be/BUCiSSyIGGU",
+            "https://youtu.be/7S_tz1z_5bA",
+            "https://youtu.be/HXV3zeQKqGY",
+            "https://youtu.be/9ylj9NR0Lcg",
+            "https://youtu.be/4ZtFXsA7xK0",
+            "https://youtu.be/6ERdu4k62wI",
+            "https://youtu.be/Ke90Tje7VS0",
+            "https://youtu.be/ZxKM3DCV2kE",
+            "https://youtu.be/0ik6X4DJKCc",
+            "https://youtu.be/ysEN5RaKOlA",
+            "https://youtu.be/1v_Zf9C8v4E",
+            "https://youtu.be/3PHXvlpOkf4",
+            "https://youtu.be/3JluqTojuME",
+            "https://youtu.be/j59qQ7YWLxw",
+            "https://youtu.be/PkZNo7MFNFg?t=10",
+            "https://youtu.be/0pThnRneDjw",
+            "https://youtu.be/2eebptXfEvw?t=5",
+            "https://youtu.be/DG0C3Tntl1M?t=20",
+            "https://youtu.be/8ext9G7xspg",
+            "https://youtu.be/3PHXvlpOkf4?t=30",
+            "https://youtu.be/1Rs2ND1ryYc?t=15",
+            "https://youtu.be/W6NZfCO5SIk?t=12",
+            "https://youtu.be/hdI2bqOjy3c?t=20",
+            "https://youtu.be/qz0aGYrrlhU?t=25",
+            "https://youtu.be/mU6anWqZJcc?t=40",
+            "https://youtu.be/yfoY53QXEnI?t=10",
+            "https://youtu.be/MBRqu0YOH14",
+            "https://youtu.be/8jPQjjsBbIc",
+            "https://youtu.be/IlU-zDU6aQ0",
+            "https://youtu.be/6gLzcf3fK0Q",
+            "https://youtu.be/2OEL4P1Rz04",
+            "https://youtu.be/WPPPFqsECz0",
+            "https://youtu.be/GWGbOjlJDkU",
+            "https://youtu.be/dBnniua6-oM",
+            "https://youtu.be/9YRjX3A_8cM",
+            "https://youtu.be/75d_29QWELk",
+            "https://youtu.be/3WMB11CRsX8",
+            "https://youtu.be/rBpaUICxEhk",
+            "https://youtu.be/7XFLTDQ4JMk",
+            "https://youtu.be/yo1pJ_D-H3M",
+            "https://youtu.be/4pLUleLdwY4",
+            "https://youtu.be/6MBaFL7sCb8",
+            "https://youtu.be/lAC8IEJDxCg",
+            "https://youtu.be/TQMbvJNRpLE",
+            "https://youtu.be/9k7v9z5Rr7Q",
+            "https://youtu.be/8sYK7lm3UKg",
+            "https://youtu.be/wnHW6o8WMas",
+            "https://youtu.be/75d_29QWELk?t=20",
+            "https://youtu.be/ZXsQAXx_ao0",
+            "https://youtu.be/sBAqF00gBGk",
+            "https://youtu.be/9QiE-M1LrZk",
+            "https://youtu.be/1nBwfZZvjKo",
+            "https://youtu.be/zBgCRJluWTc",
+            "https://youtu.be/UNQhuFL6CWg",
+            "https://youtu.be/4pLUleLdwY4?t=15",
+            "https://youtu.be/3sK3wJAxGfs",
+            "https://youtu.be/FWTNMzK9vG4",
+            "https://youtu.be/8jPQjjsBbIc?t=30",
+            "https://youtu.be/lAC8IEJDxCg?t=10",
+            "https://youtu.be/IlU-zDU6aQ0?t=25",
+            "https://youtu.be/MBRqu0YOH14?t=10",
+            "https://youtu.be/WPPPFqsECz0?t=20",
+            "https://youtu.be/dBnniua6-oM?t=15",
+            "https://youtu.be/GWGbOjlJDkU?t=40"
+        ];
+
+        const videoGrid = document.querySelector('.video-grid');
+        let currentModalId = 23;
+
+        extraVideos.forEach(url => {
+            const match = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)(?:\?t=(\d+))?/);
+            if (match) {
+                const vid = match[1];
+                const t = match[2];
+                let iframeSrc = `https://www.youtube.com/embed/${vid}`;
+                if (t) {
+                    iframeSrc += `?start=${t}`;
+                }
+
+                const html = `
+                    <div class="video-item">
+                        <input type="checkbox" id="modal-${currentModalId}" class="modal-toggle">
+                        <label for="modal-${currentModalId}" class="video-card">
+                            <div class="thumbnail-container">
+                                <img src="https://img.youtube.com/vi/${vid}/maxresdefault.jpg" alt="Thumbnail" onerror="this.src='https://img.youtube.com/vi/${vid}/hqdefault.jpg'">
+                                <span class="duration">10:00</span>
+                            </div>
+                            <div class="video-info">
+                                <img src="https://img.youtube.com/vi/${vid}/default.jpg" alt="Avatar" class="channel-avatar">
+                                <div class="video-details">
+                                    <h3 class="video-title">YouTube Video</h3>
+                                    <p class="channel-name">Various Creators</p>
+                                    <p class="video-stats">100K views • 1 week ago</p>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="modal">
+                            <label for="modal-${currentModalId}" class="modal-overlay"></label>
+                            <div class="modal-content">
+                                <label for="modal-${currentModalId}" class="modal-close">&times;</label>
+                                <iframe data-src="${iframeSrc}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                videoGrid.insertAdjacentHTML('beforeend', html);
+                currentModalId++;
+            }
+        });
+
+        // Function to stop video in a specific modal
+        function stopVideo(modalToggle) {
+            const videoItem = modalToggle.closest('.video-item');
+            if (videoItem) {
+                const iframe = videoItem.querySelector('.modal iframe');
+                if (iframe) {
+                    // Resetting src stops the video and unloads it to save memory
+                    iframe.src = '';
+                }
+            }
+        }
+
+        // Listen for all modal toggle changes
+        document.querySelectorAll('.modal-toggle').forEach(toggle => {
+            toggle.addEventListener('change', function() {
+                if (this.checked) {
+                    // Lazy load iframe src to save page load time
+                    const videoItem = this.closest('.video-item');
+                    if (videoItem) {
+                        const iframe = videoItem.querySelector('.modal iframe');
+                        if (iframe && iframe.dataset.src) {
+                            iframe.src = iframe.dataset.src;
+                        }
+                    }
+
+                    // When opening one video, stop all others just in case
+                    document.querySelectorAll('.modal-toggle').forEach(other => {
+                        if (other !== this && other.checked) {
+                            other.checked = false;
+                            stopVideo(other);
+                        }
+                    });
+                } else {
+                    // When closing this video, stop it
+                    stopVideo(this);
+            
+                }
+            });
+        });
+
+        // Also stop videos when clicking sidebar navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelectorAll('.modal-toggle').forEach(toggle => {
+                    if (toggle.checked) {
+                        toggle.checked = false;
+                        stopVideo(toggle);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
